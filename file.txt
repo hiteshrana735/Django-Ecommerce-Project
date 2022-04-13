@@ -1,0 +1,5 @@
+This is some text that I want to write into the file.
+This is another line of text that we wrote inside this. 
+This file has 3 lines in total
+This text is appended later on
+We appended another line

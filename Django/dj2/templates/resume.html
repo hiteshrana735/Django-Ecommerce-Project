@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar {
+            background-color: black;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            width: 90%;
+            background: chartreuse;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        div.resume {
+            background-color: rgb(230, 230, 230);
+            height: 170vh;
+            width: 70vw;
+            margin: auto;
+        }
+
+        div.title {
+            height: 120px;
+            width: 100%;
+            background-color: gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        div.image {
+            margin-top: 20%;
+            margin-left: 50px;
+        }
+
+        div.image img {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+        }
+
+        div.name {
+            margin-right: 20px;
+            color: white;
+            font-size: 25px;
+        }
+
+        aside {
+            background-color: lightgray;
+            height: 150vh;
+            width: 35%;
+            float: left;
+        }
+
+        .contactDetails {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            top: 130px;
+        }
+
+        .contactDetails div,
+        .skills div,
+        .follow div {
+            margin: 15px;
+        }
+
+        .skills {
+            text-align: center;
+            width: 90%;
+            margin: 10px auto;
+            position: relative;
+            top: 160px;
+        }
+
+        .follow {
+            text-align: center;
+            width: 90%;
+            margin: 10px auto;
+            position: relative;
+            top: 180px;
+        }
+
+        section {
+            height: 150vh;
+            width: 64%;
+            float: right;
+        }
+
+        div.about,
+        div.work,
+        div.edu {
+            margin: 20px auto;
+            width: 90%;
+            text-align: justify;
+        }
+
+        div.work div,
+        div.edu div {
+            margin: 10px 7px;
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <div class="resume">
+        <div class="title">
+            <div class="image">
+                <img src="{% static 'assets/blog5.jpg' %}" alt="">
+            </div>
+            <div class="name">
+                <h1>Haaris Saifi</h1>
+                <h3>Graphic & Web Designer</h3>
+            </div>
+        </div>
+
+        <aside>
+            <div class="contactDetails">
+                <h2>CONTACT</h2>
+                <div class="phone">
+                    <h3>Phone</h3>
+                    <p>9634166040</p>
+                </div>
+
+                <div class="email">
+                    <h3>Email</h3>
+                    <p>haaris.saifi@trainingbasket.net</p>
+                </div>
+
+                <div class="home">
+                    <h3>Home Address</h3>
+                    <p>Fortis Hospital, Sector 62, Noida, UP</p>
+                </div>
+            </div>
+
+            <div class="skills">
+                <h2>SKILLS</h2>
+                <div class="graphic">
+                    <h3>Graphic Designing</h3>
+                    <progress value="60" max="100"></progress>
+                </div>
+                <div class="web">
+                    <h3>Web Development</h3>
+                    <progress value="80" max="100"></progress>
+                </div>
+                <div class="soft">
+                    <h3>Software Development</h3>
+                    <progress value="70" max="100"></progress>
+                </div>
+            </div>
+
+            <div class="follow">
+                <h3>FOLLOW</h3>
+                <div class="linkedin">
+                    <h4>LinkedIn</h4>
+                    <p>www.linkedIn.com\haaris-saifi</p>
+                </div>
+                <div class="twitter">
+                    <h4>Twitter</h4>
+                    <p>www.twitter.com\haaris-saifi</p>
+                </div>
+                <div class="pinterest">
+                    <h4>Pinterest</h4>
+                    <p>www.pinterest.com\haaris-saifi</p>
+                </div>
+
+            </div>
+        </aside>
+
+        <section>
+            <div class="about">
+                <h2>ABOUT ME</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolore reprehenderit
+                    molestias, mollitia dolores ratione doloribus et illo adipisci voluptate quas est assumenda.
+                    Tempora, sint. Nam, exercitationem! Voluptatem eius fugiat ex culpa at quo ipsa iusto pariatur nisi
+                    temporibus nostrum soluta rerum impedit, sunt dolorum optio aperiam libero, dolorem minus totam
+                    ratione! Temporibus beatae recusandae deleniti molestiae dolorum exercitationem nihil, iste
+                    excepturi omnis at ut vel a culpa inventore necessitatibus unde quia?</p>
+            </div>
+
+            <div class="work">
+                <h2>WORK</h2>
+                <div class="w1">
+                    <h3>Senior Project Manager</h3>
+                    <h5>Digital Bhartiye Corp.</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta tenetur est laboriosam. Repellat
+                        modi at harum reprehenderit, repellendus ea? Commodi sequi provident eaque rem, distinctio
+                        maiores iste quo sit velit.</p>
+                </div>
+                <div class="w2">
+                    <h3>Senior Software Engineer</h3>
+                    <h5>Digital Bhartiye Corp.</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta tenetur est laboriosam. Repellat
+                        modi at harum reprehenderit, repellendus ea? Commodi sequi provident eaque rem, distinctio
+                        maiores iste quo sit velit.</p>
+                </div>
+                <div class="w3">
+                    <h3>Web Designer</h3>
+                    <h5>Designoweb Inc</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta tenetur est laboriosam. Repellat
+                        modi at harum reprehenderit, repellendus ea? Commodi sequi provident eaque rem, distinctio
+                        maiores iste quo sit velit.</p>
+                </div>
+            </div>
+
+            <div class="edu">
+                <h2>EDUCATION</h2>
+                <div class="e1">
+                    <h3>ABC DEF Model School</h3>
+                    <p>Higher Secondary School</p>
+                </div>
+                <div class="e2">
+                    <h3>XYZ DEF Model School</h3>
+                    <p>Senior Secondary School</p>
+                </div>
+                <div class="e3">
+                    <h3>BDWUYWE College</h3>
+                    <p>Bachelor In Information Technology</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+ 
